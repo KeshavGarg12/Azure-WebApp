@@ -45,7 +45,7 @@ const Menu = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/menu')
+    fetch('https://backendazure12-fmc0g4fvc6a7cmf5.canadacentral-01.azurewebsites.net/menu')
       .then((res) => res.json())
       .then((data) => {
         setMenuItems(data);
